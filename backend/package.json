@@ -5,7 +5,7 @@
   "main": "src/loader.js",
   "scripts": {
     "dev":"nodemon",
-    "production":"pm2 start src/loader.js --name help-me-task"
+    "production":"pm2 start src/loader.js --name help-task"
   },
   "keywords": [],
   "author": "",

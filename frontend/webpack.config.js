@@ -13,10 +13,10 @@ module.exports = {
         port: 8080,
         contentBase: './public',
     },
-    //extensions and reference node_modules
+    //extensions and alias the folder node_modules
     resolve: {
-        extensions: ['', 'js', 'jsx'],
-        alias :{
+        extensions: ['', '.js', '.jsx'],
+        alias: {
             modules: __dirname + '/node_modules'
         }
     },
@@ -28,16 +28,17 @@ module.exports = {
     module: {
         loaders: [{
             test: /.js[x]?$/, 
-            exclude: '/node_modules/',
+            loader: 'babel-loader',
+            exclude: /node_modules/,
             query: {
-                preset: ['es2015', 'react'],
+                presets: ['es2015', 'react'],
                 plugins: ['transform-object-rest-spread']
             }
         }, {
             test: /\.css/,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         },{
-            test: /\.woff|.woff2|.ttf|.oot|.svg*.*$/,
+            test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
             loader:'file'
         }]
     }
