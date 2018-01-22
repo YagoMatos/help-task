@@ -2,7 +2,7 @@ import React from 'react'
 //hashHistory to navigation 
 import { Router, Route, Redirect, hashHistory } from 'react-router'
 
-import HelpTask from '../helpTask/helpTask'
+import HelpTask from '../task/task'
 import About from '../about/about'
 
 export default props => (
