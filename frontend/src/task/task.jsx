@@ -9,7 +9,7 @@ import TaskList from './taskList'
 const URL = 'http://localhost:3003/api/tasks'
 
 
-export default class HelpTask extends Component {
+export default class Task extends Component {
     constructor(props){
         super(props)
         this.state = { description: '', list: [] }
@@ -81,7 +81,7 @@ export default class HelpTask extends Component {
                     handleSearch={this.handleSearch} 
                     handleClear={this.handleClear}/>
                 <TaskList 
-                    list={this.state.list}
+                    /*list={this.state.list}*/
                     handleMarkAsDone={this.handleMarkAsDone}
                     handleMarkAsPending={this.handleMarkAsPending}
                     handleRemove={this.handleRemove}/>
