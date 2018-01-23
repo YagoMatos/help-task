@@ -10,8 +10,13 @@ export default (state = INITIAL_STATE, action) => {
         case 'TASK_SEARCHED':
             return {
                 ...state,
-                list: action.payload.data
+                list: action.payload
             }
+        case 'TASK_CLEAR':
+            return {
+                ...state,
+                description:''
+        }
         default:
             return state
     }
