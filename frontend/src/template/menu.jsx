@@ -1,19 +1,15 @@
 import React from 'react'
 
 export default props => (
-    <nav className='navbar navbar-inverse bg-inverse'>
+    <nav className='navbar navbar-color navbar-inverse'>
         <div className='container'>
             <div className='navbar-header'>
                 <a className='navbar-brand' href='#'>
-                    <i className='fa fa-calendar-check-o'></i> HelpTask App
+                   <span className='navbar-brand-text'> | </span>
+                    <span className='icon'><i className='fa fa-check-circle-o'></i></span>
+                    <span className='navbar-brand-text'>
+                        <strong>H</strong>elp <strong>T</strong>ask |</span> 
                 </a>
-            </div>
-
-            <div id='navbar' className='navbar-collapse collapse'>
-                <ul className='nav navbar-nav'> 
-                    <li><a href='#/helptasks'>Tarefas</a></li>
-                    <li><a href='#/about'>Sobre</a></li>
-                </ul>
             </div>
         </div>
     </nav>
