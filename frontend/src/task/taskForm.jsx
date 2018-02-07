@@ -31,21 +31,23 @@ class TaskForm extends Component {
         const { add, clear, search, description } = this.props
         return(
             <div role='form' className='taskForm'>
-                <Grid cols='12 9 10'>
-                    <input id='descrition' className='form-control' 
+                <Grid cols='12 9 8'>
+                    <input id='descrition' className='form-control effect-2' 
                         onChange={this.props.changeDescription}
                         onKeyUp={this.keyHandler}
-                        placeholder='Adicione uma tarefa'
+                        placeholder='What we need to do?'
                         value={this.props.description}/>
-                </Grid>            
-                
-                <Grid cols='12 3 2'>
-                    <IconButton style='primary' icon='plus'
-                        onClick={() => add(description)}></IconButton>   
-                    <IconButton style='info' icon='search'
-                        onClick={search}></IconButton>   
-                <IconButton style='default' icon='close'
-                        onClick={this.props.clear}></IconButton>
+                        <span className='focus-border'></span>
+            
+                  
+                    <div className='buttons-managment'>
+                        <IconButton style='primary' icon='plus'
+                            onClick={() => add(description)}></IconButton>   
+                        <IconButton style='info' icon='search'
+                            onClick={search}></IconButton>   
+                        <IconButton style='default' icon='close'
+                            onClick={this.props.clear}></IconButton>
+                    </div>
                 </Grid>
             </div>  
        )
