@@ -7,9 +7,25 @@
     "dev": "webpack-dev-server --progress --colors --inline --hot",
     "production": "webpack --progress -p"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YagoMatos/help-task"
+  },
+
+  "keywords": [
+    "to Do",
+    "task Manager",
+    "react",
+    "redux",
+    "redux-form"
+  ],
+  
+  "author": "Yago Matos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YagoMatos/help-task/issues"
+  },
+
   "devDependencies": {
     "axios": "^0.15.3",
     "babel-core": "^6.22.1",

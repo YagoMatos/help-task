@@ -7,9 +7,26 @@
     "dev":"nodemon",
     "production":"pm2 start src/loader.js --name help-task"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YagoMatos/help-task"
+  },
+
+  "keywords": [
+    "to Do",
+    "task Manager",
+    "react",
+    "redux",
+    "redux-form"
+  ],
+  
+  "author": "Yago Matos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YagoMatos/help-task/issues"
+  },
+
   "devDependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
